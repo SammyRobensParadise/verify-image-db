@@ -1,6 +1,6 @@
 org: sammyrobensparadise
 app: verify-image-db
-name: aws-dynamodb-starter
+name: aws-dynamodb-images
 component: aws-dynamodb
 
 inputs:
@@ -12,7 +12,7 @@ inputs:
       AttributeType: S
   keySchema:
     - AttributeName: ID
-      KeyType: RANGE
-    - AttributeName: Date
       KeyType: HASH
+    - AttributeName: Date
+      KeyType: RANGE
   region: us-east-1
